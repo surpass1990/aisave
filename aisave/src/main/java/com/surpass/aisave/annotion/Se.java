@@ -5,6 +5,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * 应用于Object属性注解之上，以解决属性之间的逻辑关系
+ * 
+ * @author surpassE
+ *
+ */
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)

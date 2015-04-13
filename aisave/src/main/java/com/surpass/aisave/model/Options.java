@@ -1,12 +1,25 @@
 package com.surpass.aisave.model;
-
+/**
+ * 节点下对应的属性值eg
+ * [jtsec]
+ * name = ding
+ * 
+ * #password is required
+ * pwd = 12345
+ * 
+ * 上述配置包含2个Options对象
+ * name = ding是一个,其中name=name，value=ding、isBlanLine=true、comment=null
+ * pwd=12345是另一个对象，其中name=pwd、value=12345、isBlank=false、comment=#password is required
+ * 
+ * @author surpassE
+ *
+ */
 public class Options {
 
 	private String name;
 	private String value;
 	private boolean isBlankLine;
 	private String comment;
-	
 	
 	public String getName() {
 		return name;

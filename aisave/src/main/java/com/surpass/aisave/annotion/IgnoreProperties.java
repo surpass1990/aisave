@@ -4,7 +4,12 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
-
+/**
+ * 当属性的值与flag值相等时，那么忽略掉params中定义的属性字段
+ * 
+ * @author surpassE
+ *
+ */
 @Target({ })
 @Retention(RUNTIME)
 public @interface IgnoreProperties {
